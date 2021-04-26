@@ -39,17 +39,18 @@
 
 
 h1, h2, h3, h4, input {
-  font-family: 'Futura PT';
+  	font-family: 'Futura PT';
+	color: #2F69D0;
 }
 
-p, a, span, label {
-  font-family: 'Futura PT Book';
-  text-decoration: none;
+p, a, span, label, h5, h6 {
+  	font-family: 'Futura PT Book';
+  	text-decoration: none;
 }
 
 a:focus,
 a:active {
-  outline: none;
+  	outline: none;
 }
 
 
@@ -345,4 +346,118 @@ a:active {
 
 .blue-btn:hover{
 	background: linear-gradient(180deg, #3771DB 100%, #2159BB 0%);
+}
+
+/*---------------second display---------------------*/
+
+.title-block{
+	font-size: 48px;
+	font-weight: 700;
+	max-width: 579px;
+	line-height: normal;
+}
+
+.container-secure-property{
+	background: linear-gradient(180deg, rgba(243, 246, 254, 0) 0%, #F3F6FE 100%);
+	border: 1px solid #4D87EC;
+	box-sizing: border-box;
+	border-radius: 20px;
+	padding: 44px 67px 40px;
+	margin-right: 36px;
+	position: relative;
+}
+
+.container-secure-property::after{
+	content: '';
+	position: absolute;
+	bottom: 17px;
+	left: -102px;
+	background: url("../images/half.svg")no-repeat;
+	width: 179px;
+	height: 158px;
+}
+
+.container-secure-property::before {
+	content: '';
+	position: absolute;
+	top: -63px;
+	right: 0;
+	background: url("../images/line_blue.svg")no-repeat;
+	width: 142px;
+	height: 54px;
+}
+
+.container-blocks-input{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.wrapper-input{
+	max-width: 390px;
+	width: 100%;
+}
+
+.input-block{
+	border: 1px solid #7186F8;
+	box-sizing: border-box;
+	border-radius: 30px;
+	padding: 19px;
+	background: transparent;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 600;
+	color: #657AEC;
+	max-width: 390px;
+	width: 100%;
+	margin-top: 15px;
+}
+
+.title-input{
+	font-size: 24px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.container-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+.success-text{
+	margin-top: 25px;
+	font-weight: 400;
+	font-size: 24px;
+	color: #000000;
+	padding-left: 37px;
+	position: relative;
+}
+
+.success-text::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	background: url("../images/check.svg") no-repeat;
+	width: 27px;
+	height: 20px;
+}
+
+.second-display{
+	position: relative;
+	max-width: 1180px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.second-display::before{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: -2px;
+	background: url("../images/before_right.svg")no-repeat;
+	width: 90px;
+	height: 100%;
 }
