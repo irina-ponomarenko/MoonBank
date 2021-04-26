@@ -284,7 +284,7 @@ a:active {
 	justify-content: space-between;
 	padding-top: 155px;
 	position: relative;
-	padding-bottom: 317px;
+	padding-bottom: 269px;
 	min-height: 531px;
 }
 
@@ -292,7 +292,7 @@ a:active {
 	content: '';
 	position: absolute;
 	background: url("../images/before_1.svg")no-repeat;
-	bottom: 0;
+	bottom: -49px;
 	width: 100%;
 	height: 421px;
 }
@@ -445,19 +445,23 @@ a:active {
 	height: 20px;
 }
 
-.second-display{
+.wrapper-secure{
 	position: relative;
 	max-width: 1180px;
 	width: 100%;
 	margin: 0 auto;
 }
 
-.second-display::before{
+.wrapper-secure::before{
 	content: '';
 	position: absolute;
 	right: 0;
-	top: -2px;
+	top: 49px;
 	background: url("../images/before_right.svg")no-repeat;
 	width: 90px;
 	height: 100%;
+}
+
+.second-display{
+	padding-bottom: 156px;
 }
