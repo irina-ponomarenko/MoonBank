@@ -1,0 +1,193 @@
+/*---------------------fonts----------------------*/
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../fonts/futura_pt/FuturaPT-Bold.eot');
+    src: local('../fonts/futura_pt/Futura PT Bold'), local('FuturaPT-Bold'),
+        url('../fonts/futura_pt/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_pt/FuturaPT-Bold.woff2') format('woff2'),
+        url('../fonts/futura_pt/FuturaPT-Bold.woff') format('woff'),
+        url('../fonts/futura_pt/FuturaPT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Futura PT Demi';
+    src: url('../fonts/futura_pt/FuturaPT-Demi.eot');
+    src: local('../fonts/futura_pt/Futura PT Demi'), local('FuturaPT-Demi'),
+        url('../fonts/futura_pt/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_pt/FuturaPT-Demi.woff2') format('woff2'),
+        url('../fonts/futura_pt/FuturaPT-Demi.woff') format('woff'),
+        url('../fonts/futura_pt/FuturaPT-Demi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('../fonts/futura_pt/FuturaPT-Book.eot');
+    src: local('../fonts/futura_pt/Futura PT Book'), local('FuturaPT-Book'),
+        url('../fonts/futura_pt/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/futura_pt/FuturaPT-Book.woff') format('woff'),
+        url('../fonts/futura_pt/FuturaPT-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1, h2, h3, h4, input {
+  font-family: 'Futura PT';
+}
+
+p, a, span, label {
+  font-family: 'Futura PT Book';
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+
+/*------------------wrapper-content------------------*/
+
+.wrapper-content{
+	width: 100%;
+	background: url("../images/bg.jpg")no-repeat;
+	background-size: cover;
+}
+
+/*---------------------------------------------------*/
+
+/*------------------header----------------------------*/
+
+.header{
+	max-width: 1180px;
+	width: 100%;
+	padding: 45px 0 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.container-center{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    max-width: 60%;
+    width: 100%;
+}
+
+.logo-wrapper a{
+	max-width: 175px;
+	width: 100%;
+}
+
+.menu-list{
+	display: flex;
+	align-items: center;
+}
+
+.menu-link{
+	font-family: 'Futura PT Book';
+	font-weight: 400;
+	font-size: 16px;
+	color: #2F69D0;
+	margin-right: 40px;
+}
+
+.menu-item{
+	position: relative;
+	padding-bottom: 9px;
+}
+
+.menu-item.active-menu-link::after{
+	content: '';
+	width: 36%;
+	position: absolute;
+	bottom: 0;
+	height: 3px;
+	background: #2F69D0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.menu-list{
+	width: fit-content;
+}
+
+.connect-btn{
+	background: transparent;
+	width: 174px;
+	height: 52px;
+	border-radius: 30px;
+	border: 1px solid #5C6DEC;
+	position: relative;
+}
+
+.connect-btn:hover{
+	background: #EFF1FE;
+	transition: .3s;
+}
+
+.connect-btn span{
+	color: #316AD1;
+	font-family: 'Futura PT';
+	font-weight: bold;
+	font-size: 14px;
+	margin-left: 30px;
+}
+
+.connect-btn::before{
+	content: '';
+	position: absolute;
+	left: 23px;
+	top: 0;
+	bottom: 0;
+	background: url('../images/graphic.svg')no-repeat;
+	width: 25px;
+	height: 23px;
+	background-size: contain;
+    transform: translateY(50%);
+}
+
+.contact-link{
+	width: 28px;
+	height: 28px;
+	display: block;
+	margin-right: 25px;
+}
+
+.telegram{
+	background: url('../images/telegram.svg')no-repeat;
+	background-size: contain;
+}
+
+.twitter{
+	background: url('../images/twitter.svg')no-repeat;
+	background-size: contain;
+}
+
+.wichat{
+	background: url('../images/chat.svg')no-repeat;
+	background-size: contain;
+}
+
+.contact-list{
+	display: flex;
+	align-items: center;
+	margin-left: 36px;
+}
+
+.container-header-contact{
+	display: flex;
+	align-items: center;
+}
+
+/*-----------------------------------------------------*/
