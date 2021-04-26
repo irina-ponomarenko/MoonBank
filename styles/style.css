@@ -78,7 +78,7 @@ a:active {
 .container-center{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: baseline;
     max-width: 60%;
     width: 100%;
 }
@@ -189,5 +189,66 @@ a:active {
 	display: flex;
 	align-items: center;
 }
+
+.list-language{
+	margin: 0;
+	padding: 0;
+	display: none;
+	position: absolute;
+	top: 30px;
+	box-shadow: 0px 8px 12px #E6E9FE;
+}
+
+.list-language > li {
+	background: #FFFFFF;
+	padding: 7px 12px;
+	cursor: pointer;
+	list-style-type: none;
+	width: 27px;
+}
+
+.list-language,
+.list-language li:last-child{
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.list-language > li:hover, list-language > li.active-lng {
+	background: #EFF1FE;
+	transition: .3s;
+}
+
+.link-language,
+.container-language p{
+	font-size: 16px;
+	font-family: 'Futura PT Book';
+	font-weight: normal;
+	color: #2F69D0;
+}
+
+.lang{
+	padding: 7px 12px;
+	cursor: pointer;
+	width: 27px;
+}
+
+.container-language{
+	background: #FFFFFF;
+	box-shadow: 0px 8px 12px #E6E9FE;
+	border-radius: 5px;
+	position: relative;
+}
+
+.lang::before{
+	content: '';
+	position: absolute;
+	right: 7px;
+	width: 6px;
+	height: 6px;
+	background: url("../images/dropdown_check.svg")no-repeat;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 
 /*-----------------------------------------------------*/
