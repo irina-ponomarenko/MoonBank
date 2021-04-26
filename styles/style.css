@@ -74,6 +74,8 @@ a:active {
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
+	z-index: 100;
+	position: relative;
 }
 
 .container-center{
@@ -365,6 +367,8 @@ a:active {
 	padding: 44px 67px 40px;
 	margin-right: 36px;
 	position: relative;
+	min-height: 180px;
+	margin-bottom: 156px;
 }
 
 .container-secure-property::after{
@@ -462,6 +466,190 @@ a:active {
 	height: 100%;
 }
 
-.second-display{
-	padding-bottom: 156px;
+
+/*---------------plan list-------------*/
+
+.list-blocks{
+	display: flex;
+	align-items: flex-start;
+	cursor: pointer;
+}
+
+.item-blocks{
+	max-width: 263px;
+	width: 100%;
+	position: relative;
+	padding-bottom: 118px;
+	z-index: 10;
+	margin-right: 30px;
+}
+
+.item-blocks:last-child{
+	margin-right: 0;
+}
+
+.container-item-info{
+	background: #F7F8FE;
+	border-radius: 20px;
+	padding: 30px 22px;
+	max-width: 219px;
+	width: 100%;
+}
+
+.item-blocks::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 189px;
+	left: -14px;
+	right: 0;
+	width: 292px;
+	background: url("../images/light_plate.png")no-repeat;
+	z-index: -1;
+	cursor: pointer;
+}
+
+.item-blocks:hover .container-item-info{
+	background: linear-gradient(180deg, #F9FAFF 0%, #DBE0FD 100%);
+}
+
+.item-blocks:hover::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 189px;
+	left: -14px;
+	right: 0;
+	width: 292px;
+	background: url("../images/dark_plate.png")no-repeat;
+	z-index: -1;
+}
+
+.title-item{
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.color-btn{
+	font-size: 30px;
+	font-weight: 700;
+	width: 218px;
+	height: 52px;
+	border-radius: 50px;
+	margin: 30px 0;
+	box-shadow: none;
+}
+
+.pink-btn{
+	background: #C059C4;
+}
+
+.color-btn.pink-btn:hover{
+	background: #af4cb3;
+}
+
+.blue-light-btn{
+	background: #2CD9F7;
+}
+
+.blue-light-btn:hover{
+	background: #26c5e0;
+}
+
+.violet-btn{
+	background: #6A80F7;
+}
+
+.violet-btn:hover{
+	background: #5c70da;
+}
+
+.dark-blue-btn{
+	background: #1793F8;
+}
+
+.dark-blue-btn:hover{
+	background: #1481da;
+}
+
+.item-body-list{
+	margin-bottom: 10px;
+	padding-left: 27px;
+	position: relative;
+}
+
+.item-body-list:last-child{
+	margin-bottom: 0;
+}
+
+.text-body-item{
+	font-size: 18px;
+	font-weight: 450;
+	color: #000000;
+}
+
+.bold-span,
+.bold-text-item{
+	font-weight: 700;
+	font-family: "Futura PT";
+}
+
+.item-body-list::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background: url("../images/little_planet.svg")no-repeat;
+	width: 18px;
+	height: 18px;
+}
+
+.body-input{
+	border: 1px solid #5C6DEC;
+	box-sizing: border-box;
+	filter: drop-shadow(0px 15px 24px #DCE1F8);
+	border-radius: 30px;
+	color: #316AD1;
+	font-size: 18px;
+	font-weight: 600;
+	background: transparent;
+	max-width: 159px;
+	height: 52px;
+	width: 100%;
+	padding: 15px 24px;
+}
+
+.wrapper-input-body{
+	display: flex;
+	align-items: center;
+	margin-top: 32px;
+}
+
+.label-input{
+	color: #316AD1;
+	font-weight: 700;
+	font-size: 18px;
+	font-family: "Futura PT";
+	margin-left: 13px;
+}
+
+.sub-text-input{
+	font-size: 14px;
+	margin-top: 10px;
+	max-width: 227px;
+	width: 100%;
+}
+
+.light-blue-btn{
+	background: linear-gradient(180deg, #6A80F7 0%, #BDC7FD 100%);
+}
+
+.light-blue-btn:hover{
+	background: linear-gradient(180deg, #BDC7FD 0%, #6A80F7 100%);
+}
+
+.footer-item{
+	margin-top: 30px;
 }
