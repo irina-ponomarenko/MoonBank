@@ -1027,11 +1027,13 @@ a:active {
 	font-weight: 600;
 	font-size: 22px;
 	margin-bottom: 10px;
+	position: relative;
 }
 
 .text-goal{
 	font-size: 18px;
 	line-height: normal;
+	position: relative;
 }
 
 .first-goal{
