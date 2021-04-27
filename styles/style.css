@@ -830,18 +830,159 @@ a:active {
 	margin-right: 5px;
 }
 
-/*.second-display{*/
-/*	position: relative;*/
-/*	padding-bottom: 250px;*/
-/*}*/
+/*-----------block investments---------*/
 
-/*.second-display::before{*/
-/*	content: '';*/
-/*	position: absolute;*/
-/*	bottom: 0;*/
-/*	left: 0;*/
-/*	right: 0;*/
-/*	width: 93%;*/
-/*	height: 260px;*/
-/*	background: url("../images/before_2.svg") no-repeat;*/
-/*}*/
+.wrapper-investments{
+	padding: 96px 0 44px 93px;
+	max-width: 1180px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.wrapper-investments::before{
+	content: '';
+	position: absolute;
+	top: -7px;
+	left: 0;
+	right: 0;
+	width: 93%;
+	height: 260px;
+	background: url("../images/before_2.svg") no-repeat;
+}
+
+.wrapper-investments::after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 504px;
+	background: url("../images/before_3.svg") no-repeat;
+}
+
+.numbers-info{
+	display: flex;
+}
+
+.numbers-info span{
+	margin-right: 5px;
+}
+
+.blue-text,
+.red-text{
+	font-family: "Futura PT";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+}
+
+.blue-text{
+	color: #657AEC;
+}
+
+.red-text{
+	color: #f9687f;
+}
+
+.date{
+	font-family: "Futura PT Book";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	margin-left: 10px;
+}
+
+.text-info p{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+}
+
+.text-info{
+	margin-top: 10px;
+}
+
+.text-info span{
+	font-family: "Futura PT";
+	font-style: normal;
+	font-weight: 600;
+}
+
+.item-investment{
+	background: #F7F8FF;
+	border: 1px solid #4D87EC;
+	box-sizing: border-box;
+	border-radius: 30px;
+	max-width: 556px;
+	width: 100%;
+	padding: 25px 18px;
+	margin-bottom: 10px;
+}
+
+.item-investment:last-child{
+	margin-bottom: 0;
+}
+
+.container-blocks-investment, .header-display{
+	position: relative;
+}
+
+.container-blocks-investment{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 660px;
+	position: relative;
+	z-index: 10000;
+}
+
+.invest-btn{
+	margin-top: 37px;
+}
+
+.right-block{
+	position: relative;
+}
+
+.right-block img{
+	width: 100%;
+}
+
+.item-total{
+	margin-bottom: 17px;
+}
+
+.item-total:last-child{
+	margin-bottom: 0;
+}
+
+.container-list-investment{
+	margin-top: 17px;
+}
+
+.item-total{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item-total p{
+	font-family: "Futura PT Book";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+}
+
+.container-result span{
+	color: #657AEC;
+	font-family: "Futura PT";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+}
+
+.list-investments{
+	display: none;
+}
