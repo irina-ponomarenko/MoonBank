@@ -286,7 +286,7 @@ a:active {
 	justify-content: space-between;
 	padding-top: 155px;
 	position: relative;
-	padding-bottom: 269px;
+	padding-bottom: 309px;
 	min-height: 531px;
 }
 
@@ -294,7 +294,7 @@ a:active {
 	content: '';
 	position: absolute;
 	background: url("../images/before_1.svg")no-repeat;
-	bottom: -49px;
+	bottom: 0;
 	width: 100%;
 	height: 421px;
 }
@@ -460,7 +460,7 @@ a:active {
 	content: '';
 	position: absolute;
 	right: 0;
-	top: 49px;
+	top: 0;
 	background: url("../images/before_right.svg")no-repeat;
 	width: 90px;
 	height: 100%;
@@ -756,3 +756,92 @@ a:active {
 .referral-block{
 	padding-left: 78px;
 }
+
+.referral-text{
+	margin-top: 23px;
+}
+
+.referral-text-item p{
+	color: #212529;
+	font-family: "Futura PT Book";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.referral-text-item{
+	margin-bottom: 10px;
+}
+
+.referral-text-item p a{
+	color: #2F69D0;
+	font-family: "Futura PT";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 0 10px;
+	text-transform: uppercase;
+}
+
+.container-referral-info{
+	background: rgba(220, 225, 253, 0.38);
+	border-radius: 10px;
+	padding: 19px 24px 13px;
+	margin: 18px 0;
+}
+
+.referral-item-info td{
+	padding: 5px 0;
+}
+.referral-item-info p{
+	color: #212529;
+	font-family: "Futura PT Book";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.result span{
+	padding-left: 10px;
+	color: #437FEC;
+	font-family: "Futura PT";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.total-wrapper{
+	display: flex;
+	align-items: center;
+}
+
+.total-wrapper p{
+	color: #212529;
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+.total-wrapper span{
+	color: #437FEC;
+	font-family: "Futura PT";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	margin-right: 5px;
+}
+
+/*.second-display{*/
+/*	position: relative;*/
+/*	padding-bottom: 250px;*/
+/*}*/
+
+/*.second-display::before{*/
+/*	content: '';*/
+/*	position: absolute;*/
+/*	bottom: 0;*/
+/*	left: 0;*/
+/*	right: 0;*/
+/*	width: 93%;*/
+/*	height: 260px;*/
+/*	background: url("../images/before_2.svg") no-repeat;*/
+/*}*/
