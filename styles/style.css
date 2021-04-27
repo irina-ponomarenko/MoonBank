@@ -986,3 +986,102 @@ a:active {
 .list-investments{
 	display: none;
 }
+
+/*---------------block priority---------*/
+
+.wrapper-priority{
+	padding-top: 108px;
+	position: relative;
+	max-width: 1180px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.wrapper-priority::before{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: -5px;
+	width: 823px;
+	height: 100%;
+	background: url("../images/before_last.svg")no-repeat;
+}
+
+.container-schema-priority{
+	max-width: 488px;
+	width: 100%;
+}
+
+.container-schema-priority img{
+	width: 100%;
+}
+
+.container-goal-text{
+	max-width: 306px;
+	width: 100%;
+}
+
+.title-goal{
+	color: #657AEC;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+.text-goal{
+	font-size: 18px;
+	line-height: normal;
+}
+
+.first-goal{
+	margin-bottom: 80px;
+}
+
+.wrapper-priority-goals{
+	display: flex;
+	align-items: center;
+}
+
+.container-goals{
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+
+.first-goal,
+.second-goal,
+.tree-goal{
+	position: relative;
+	padding-bottom: 12px;
+}
+
+.first-goal::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 421px;
+	height: 103px;
+	background: url("../images/point_line_1.svg") no-repeat;
+}
+
+.second-goal::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 438px;
+	height: 107px;
+	background: url("../images/point_line_1.svg") no-repeat;
+}
+
+.tree-goal::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 35px;
+	width: 476px;
+	height: 97px;
+	background: url("../images/point_line_3.svg") no-repeat;
+}
