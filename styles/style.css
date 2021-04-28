@@ -843,7 +843,7 @@ a:active {
 .wrapper-investments::before{
 	content: '';
 	position: absolute;
-	top: -7px;
+	top: -10px;
 	left: 0;
 	right: 0;
 	width: 93%;
@@ -995,6 +995,7 @@ a:active {
 	max-width: 1180px;
 	width: 100%;
 	margin: 0 auto;
+	padding-bottom: 10px;
 }
 
 .wrapper-priority::before{
@@ -1086,4 +1087,146 @@ a:active {
 	width: 476px;
 	height: 97px;
 	background: url("../images/point_line_3.svg") no-repeat;
+}
+
+/*---------------------faq block------------------*/
+
+.container-faq-info{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.container-img-faq{
+	max-width: 630px;
+	width: 100%;
+}
+
+.container-img-faq img{
+	width: 100%;
+}
+
+.left-faq{
+	width: 50%;
+}
+
+.right-faq{
+	width: 50%;
+	position: relative;
+	min-height: 580px;
+}
+
+.item-faq{
+	max-width: 553px;
+	width: 100%;
+	background: #F0F3FE;
+	border: 1px solid #4D87EC;
+	box-sizing: border-box;
+	border-radius: 30px;
+	padding: 24px 30px 21px 19px;
+	margin-bottom: 15px;
+}
+
+.change-style{
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.item-faq:last-child{
+	margin-bottom: 0;
+}
+
+.text-faq p{
+	font-size: 16px;
+	line-height: normal;
+}
+
+.text-faq{
+	padding-top: 11px;
+	border-top: 1px solid #4D87EC;
+	margin-top: 15px;
+	display: none;
+}
+
+.active-text{
+    display: list-item;
+}
+
+.header-faq{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.number-faq{
+	margin-right: 14px;
+	color: #657AEC;
+	font-family: "Futura PT";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.title-faq{
+	color: #2F69D0;
+	font-size: 18px;
+}
+
+.chevron-img{
+	width: 14px;
+	height: 16px;
+	background: url("../images/dropdown_check.svg")no-repeat;
+	background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.active-chewron{
+	transform: translateY(-50%) rotate(180deg);
+	transition: .3s
+}
+
+.container-faq{
+	padding-right: 30px;
+	padding-top: 70px;
+}
+
+.container-list-faq{
+	margin-top: 15px;
+}
+
+
+/*-----------------footer---------------------*/
+
+.footer .container-display{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer{
+    padding: 135px 0 37px;
+	background: url("../images/footer.jpg")no-repeat;
+	background-size: cover;
+}
+
+.footer .container-language .list-language{
+	bottom: 30px;
+	top: inherit;
+    box-shadow: 0px -8px 20px #e6e9fe;
+}
+
+.to-top-btn{
+	border: none;
+	border-radius: 30px;
+	position: fixed;
+	bottom: 120px;
+    right: 22%;
+	width: 66px;
+	height: 66px;
+	background: url("../images/top.png") no-repeat;
+	background-size: contain;
+	z-index: 1000000;
 }
