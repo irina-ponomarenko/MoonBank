@@ -66,7 +66,7 @@ a:active {
 
 /*------------------header----------------------------*/
 
-.header{
+.header .container-display{
 	max-width: 1180px;
 	width: 100%;
 	padding: 45px 0 40px;
@@ -543,6 +543,9 @@ a:active {
 	border-radius: 50px;
 	margin: 30px 0;
 	box-shadow: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .pink-btn{
@@ -848,7 +851,7 @@ a:active {
 .wrapper-investments::before{
 	content: '';
 	position: absolute;
-	top: -10px;
+	top: -6px;
 	left: 0;
 	right: 0;
 	width: 93%;
@@ -967,6 +970,8 @@ a:active {
 
 .container-list-investment{
 	margin-top: 17px;
+	display: flex;
+	flex-direction: column;
 }
 
 .item-total{
@@ -992,6 +997,7 @@ a:active {
 
 .list-investments{
 	display: none;
+	margin: 0 auto;
 }
 
 /*---------------block priority---------*/
@@ -1248,5 +1254,29 @@ a:active {
 }
 
 .burger-mobile{
+	display: none;
+}
+
+.mobile-menu{
+	display: none;
+}
+
+.fixed{
+	position: fixed;
+    width: 100%;
+    background: #FFFFFF;
+    z-index: 100000;
+    box-shadow: 0px 8px 12px #E6E9FE;
+}
+
+.container-main-header{
+	min-height: 136px;
+}
+
+.close-mobile{
+	display: none;
+}
+
+.invest-main-mobile{
 	display: none;
 }

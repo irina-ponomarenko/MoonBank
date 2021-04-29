@@ -74,4 +74,49 @@ $( document ).ready(function() {
         }, 1000);
      });
 
+
+    //---------------------fixed header--------------------------//
+
+    $(window).scroll(function() {
+        let top = $(document).scrollTop();
+
+         if ( $(window).width() > 1180 ) {
+             if (top < 137) {
+                $(".header").removeClass('fixed');
+            }
+            else{
+                $(".header").addClass('fixed');
+            } 
+
+       }
+       else {
+            if (top < 79) {
+                $(".header").removeClass('fixed');
+            }
+            else{
+                $(".header").addClass('fixed');
+            } 
+       }
+    });
+
+
+    $('.burger-mobile').click(function(){
+        if ($(this).is(':visible')) {
+            $('.mobile-menu').addClass('show-menu');
+            $('.close-mobile').addClass('show-btn');
+            $('.dark-bg').addClass('show-bg');
+        } else {
+            $('.mobile-menu').removeClass('show-menu');
+            $('.close-mobile').removeClass('show-btn');
+            $('.dark-bg').removeClass('show-bg');
+        } 
+    });
+
+     $('.close-mobile').click(function(){
+        $('.mobile-menu').removeClass('show-menu');
+        $('.burger-mobile').show(); 
+        $(this).removeClass('show-btn');
+        $('.dark-bg').removeClass('show-bg');
+    });
+
 });
