@@ -594,7 +594,7 @@
         align-items: center;
         justify-content: center;
         background: #FFFFFF;
-        box-shadow: 0px 4px 19px rgb(1 53 86 / 17%);
+        box-shadow: 0px 4px 19px rgba(1, 53, 86, 0.17);
         border-radius: 10px;
         padding: 20px 15px;
     }
