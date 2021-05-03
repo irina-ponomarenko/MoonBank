@@ -829,6 +829,69 @@
         font-size: 24px;
     }
 
+    .title-connect {
+        font-size: 24px;
+    }
+
+    .window-connect-wallet{
+        padding: 20px 23px;
+        padding-top: 25px;
+        min-height: 150px;
+    }
+
+    .item-connect {
+        padding: 11px 18px;
+    }
+
+    .metamask:before{
+        width: 46px;
+        height: 39px;
+    }
+
+    .item-connect p{
+        font-size: 18px;
+    }
+
+    .list-connections {
+        margin: 18px 0;
+    }
+
+    .item-connect{
+        margin-bottom: 10px;
+    }
+
+    .item-connect:last-child{
+        margin-bottom: 0;
+    }
+
+    .close-window {
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        background: url("../images/close_mob_x.svg")no-repeat;
+        width: 13px;
+        height: 13px;
+        background-size: cover;
+        border: none;
+    }
+
+    .binance:before{
+        width: 30px;
+        height: 30px;
+        right: 18px;
+    }
+
+    .success-window .title-connect:before, .error-window .title-connect:before{
+        width: 38px;
+        height: 38px;
+    }
+
+    .success-window .title-connect, .error-window .title-connect {
+        position: relative;
+        padding-top: 43px;
+        margin-bottom: 12px;
+    }
+
 
 }
 

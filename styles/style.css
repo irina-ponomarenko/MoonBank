@@ -1280,3 +1280,151 @@ a:active {
 .invest-main-mobile{
 	display: none;
 }
+
+/*----------connection windows--------*/
+
+.window-connect-bg{
+	background: rgba(67, 127, 236, 0.45);
+	backdrop-filter: blur(604px) opacity(0.8);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1000000000;
+}
+
+.window-connect-wallet{
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	left: 50%;
+	background: #FFFFFF;
+	border-radius: 10px;
+	max-width: 336px;
+	width: 100%;
+	padding: 33px 42px;
+	text-align: center;
+	opacity: 1;
+	min-height: 178px;
+}
+
+.close-window{
+	position: absolute;
+	top: -25px;
+	right: -25px;
+	background: url("../images/close_white.svg")no-repeat;
+	width: 21px;
+	height: 21px;
+	background-size: cover;
+	border: none;
+}
+
+.title-connect{
+	font-size: 30px;
+	line-height: normal;
+	color: #2F69D0;
+	font-family: 'Futura PT Book';
+}
+
+.list-connections{
+	margin: 28px 0;
+}
+
+.item-connect{
+	padding: 17px 25px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	position: relative;
+	cursor: pointer;
+}
+
+.item-connect:last-child{
+	margin-bottom: 0;
+}
+
+.item-connect p{
+	font-family: "Futura PT Demi";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: normal;
+	color: #FFFFFF;
+	text-align: left;
+}
+
+.metamask{
+	background: linear-gradient(90deg, #FF5E01 3.26%, #FFDB24 100%);
+	padding-right: 85px;
+}
+
+.metamask:before{
+	content: '';
+	position: absolute;
+	right: 13px;
+	width: 83px;
+	height: 70px;
+	background: url("../images/fox.svg")no-repeat;
+	background-size: cover;
+	top: 48%;
+	transform: translateY(-50%);
+}
+
+.metamask:hover{
+	background: linear-gradient(90deg, #ff7801 3.26%, #ffd024 100%);
+}
+
+.binance{
+	background: linear-gradient(90deg, #010BFF 3.26%, #24A3FF 100%);
+	padding-right: 50px;
+}
+
+.binance:hover{
+	background: linear-gradient(90deg, #011aff 3.26%, #24b2ff 100%);
+}
+
+.binance:before{
+	content: '';
+	position: absolute;
+	right: 26px;
+	width: 42px;
+	height: 41px;
+	background: url("../images/binance.svg")no-repeat;
+	background-size: cover;
+	top: 48%;
+	transform: translateY(-50%);
+}
+
+.info-window{
+	font-size: 18px;
+	line-height: normal;
+}
+
+.success-window .title-connect,
+.error-window .title-connect{
+	position: relative;
+	padding-top: 66px;
+	margin-bottom: 20px;
+}
+
+.error-window .title-connect{
+	color: #D02F2F;
+}
+
+.success-window .title-connect:before,
+.error-window .title-connect:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 56px;
+	height: 56px;
+	background: url("../images/success.svg")no-repeat;
+	background-size: cover;
+}
+
+.error-window .title-connect:before{
+	background: url("../images/error.svg")no-repeat;
+	background-size: cover;
+}
