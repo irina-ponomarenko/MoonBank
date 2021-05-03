@@ -892,6 +892,11 @@
         margin-bottom: 12px;
     }
 
+    .window-connect-bg{
+        background: rgba(10, 14, 37, 0.62);
+        backdrop-filter: none;
+    }
+
 
 }
 
